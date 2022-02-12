@@ -1,0 +1,53 @@
+<!-- Temperature Converter - HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Temperature Converter</title>
+</head>
+
+<body>
+  
+<h1> Temperature Converter</h1>
+  
+<div id="box" class="flex-container">
+  <div id="tempEntered">
+     
+    <div id="numberEntry">
+      <input type="number" id="inputTemp" name="inputTemperature" placeholder="Enter temperature to convert">
+    </div> <!-- ends 'numberEntry' -->
+    
+    <div id="dropdownBoxes" class="flex-container">
+      <div id="chooseInputTempType">
+        <select id="inputUnit">
+          <option value="Celsius" selected="selected">Celsius</option>
+          <option value="Fahrenheit">Fahrenheit</option>
+          <option value="Kelvin">Kelvin</option>
+       </select>
+     </div> <!-- ends 'chooseInputTempType' -->
+   
+      <div id="chooseOutputTempType">
+        <p id="to"> to </p>
+        <select id="outputUnit">
+          <option value="Celsius" selected="selected">Celsius</option>
+         <option value="Fahrenheit">Fahrenheit</option>
+         <option value="Kelvin">Kelvin</option>
+       </select>
+      </div> <!-- ends 'chooseOutputTempType' -->
+    
+    </div> <!-- ends 'dropdownBoxes' flex container -->
+      
+  </div> <!-- ends 'tempEntered' -->
+  
+  <div id ="button">
+    <button name="convertTemp" id="btn" onclick="convertTemp()">Convert</button>
+  </div> <!-- ends button div-->
+  
+  <div class ="placeholder">
+    <p id="placeholder"></p>
+  </div> <!-- ends placeholder div-->
+</div> <!-- ends box div -->
+  
+</body>
+</html>
