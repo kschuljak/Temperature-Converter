@@ -5,7 +5,7 @@
 - converts between Celsius, Fahrenheit, and Kelvin
 - displays converted temperature rounded to two decimal places and with appropriate unit
 - displays error when no number is entered to convert
-- if both conversion options are the same (ex, Celsius to Celsius) the number entered is displayed
+- if both conversion options are the same (ex, Celsius to Celsius) the number entered is the number displayed
 
 ![tempconverter1](https://user-images.githubusercontent.com/47723396/183964499-2a4b10fc-eb01-48ec-b06e-86b1f249a3ea.JPG)
 
