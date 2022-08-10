@@ -4,6 +4,7 @@
  on codepen at https://codepen.io/kaschul/pen/rNYmEBO
 
 - convert between Celsius, Fahrenheit, and Kelvin
+- display converted temperature rounded to two decimal places and with appropriate unit
 - displays error when no temperature is entered to convert
 - if both conversion options are the same (ex, Celsius to Celsius) then the number entered is displayed
 
