@@ -20,7 +20,7 @@ function roundTwoDecimals(x) {
 }
 
 const convertTemp = (x, inputUnitSelected, outputUnitSelected) => {
-   // ... (code omitted for example - error handling)
+   // ... (code omitted for example - error handling if x is NaN)
    // selects correct conversion based on entered values, and assigns the correct unit to display on result
    if (inputUnitSelected == "Kelvin"  &&  outputUnitSelected == "Celsius") {
       convertedOutputTemp = (x - 273.15);
