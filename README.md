@@ -31,18 +31,7 @@ const convertTemp = (x, inputUnitSelected, outputUnitSelected) => {
    } else if (inputUnitSelected == "Kelvin" && outputUnitSelected == "Fahrenheit") {
       convertedOutputTemp = (1.8 * (x - 273) + 32);
       unit = "&deg;F";
-   } else if (inputUnitSelected == "Celsius" && outputUnitSelected == "Fahrenheit") {
-      convertedOutputTemp = (1.8 * (x) + 32);
-      unit = "&deg;F";
-   } else if (inputUnitSelected == "Celsius" && outputUnitSelected == "Kelvin") {
-      convertedOutputTemp = (x + 273.15);
-      unit = "K";
-   } else if (inputUnitSelected == "Fahrenheit" && outputUnitSelected == "Celsius") {
-      convertedOutputTemp = ((x - 32)/1.8);
-      unit = "&deg;C";
-   } else if (inputUnitSelected == "Fahrenheit" && outputUnitSelected == "Kelvin") {
-      convertedOutputTemp = (5/9 * (x - 32) + 273.15);
-      unit = "K";
+   // ... (etc - code omitted for example) ...
    } else if (inputUnitSelected == outputUnitSelected) {
       // if input and output unit are the same, return entered number with appropriate unit
       convertedOutputTemp = x;
