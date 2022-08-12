@@ -20,12 +20,9 @@ function roundTwoDecimals(x) {
 }
 
 const convertTemp = (x, inputUnitSelected, outputUnitSelected) => {
-   // error handling if entered value is not a number
-   if (isNaN(x)) {
-      convertedOutputTemp = "please enter a number";
-      return;
+   // ... (code omitted for example - error handling) ...
    // selects correct conversion based on entered values, and assigns the correct unit to display on result
-   } else  if (inputUnitSelected == "Kelvin"  &&  outputUnitSelected == "Celsius") {
+   if (inputUnitSelected == "Kelvin"  &&  outputUnitSelected == "Celsius") {
       convertedOutputTemp = (x - 273.15);
       unit = "&deg;C";
    } else if (inputUnitSelected == "Kelvin" && outputUnitSelected == "Fahrenheit") {
@@ -37,11 +34,7 @@ const convertTemp = (x, inputUnitSelected, outputUnitSelected) => {
       convertedOutputTemp = x;
       if (outputUnitSelected == "Fahrenheit") {
          unit = "&deg;F";
-      } else if (outputUnitSelected == "Kelvin") {
-         unit = "K";
-      } else if (outputUnitSelected == "Celsius") {
-         unit = "&deg;C";
-      }
+      } // ... (etc - code omitted for example) ...
    } else {
       convertedOutputTemp = "please double check conversion options";
       return;
