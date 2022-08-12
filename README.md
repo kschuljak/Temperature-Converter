@@ -24,7 +24,7 @@ const convertTemp = (x, inputUnitSelected, outputUnitSelected) => {
    if (isNaN(x)) {
       convertedOutputTemp = "please enter a number";
       return;
-   // selects correct conversion based on input unit and output unit
+   // selects correct conversion based on entered values, and assigns the correct unit to display on result
    } else  if (inputUnitSelected == "Kelvin"  &&  outputUnitSelected == "Celsius") {
       convertedOutputTemp = (x - 273.15);
       unit = "&deg;C";
