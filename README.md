@@ -28,13 +28,13 @@ const convertTemp = (x, inputUnitSelected, outputUnitSelected) => {
    } else if (inputUnitSelected == "Kelvin" && outputUnitSelected == "Fahrenheit") {
       convertedOutputTemp = (1.8 * (x - 273) + 32);
       unit = "&deg;F";
-   // ... (etc - code omitted for example) ...
+   // ... (etc - code omitted for example)
    // if input and output unit are the same, return entered number with appropriate unit
    } else if (inputUnitSelected == outputUnitSelected) {
       convertedOutputTemp = x;
       if (outputUnitSelected == "Fahrenheit") {
          unit = "&deg;F";
-      } // ... (etc - code omitted for example) ...
+      } // ... (etc - code omitted for example)
    } else {
       convertedOutputTemp = "please double check conversion options";
       return;
