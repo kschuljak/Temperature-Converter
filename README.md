@@ -31,7 +31,7 @@ const convertTemp = (x, inputUnitSelected, outputUnitSelected) => {
       unit = "&deg;F";
    // ... (etc - code omitted for example)
    // if input and output unit are the same, return entered value (rounded to two decimals) 
-   // displays output with appropriate unit
+   // entered value displayed with appropriate unit
    } else if (inputUnitSelected == outputUnitSelected) {
       convertedOutputTemp = x;
       if (outputUnitSelected == "Fahrenheit") {
