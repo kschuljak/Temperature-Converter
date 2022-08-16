@@ -21,7 +21,8 @@ function roundTwoDecimals(x) {
 
 const convertTemp = (x, inputUnitSelected, outputUnitSelected) => {
    // ... (code omitted for example - error handling if x is NaN)
-   // selects correct conversion based on entered values, and assigns the correct unit to display on result
+   // selects correct conversion based on entered values
+   // assigns the correct unit to display on result
    if (inputUnitSelected == "Kelvin"  &&  outputUnitSelected == "Celsius") {
       convertedOutputTemp = (x - 273.15);
       unit = "&deg;C";
@@ -29,7 +30,8 @@ const convertTemp = (x, inputUnitSelected, outputUnitSelected) => {
       convertedOutputTemp = (1.8 * (x - 273) + 32);
       unit = "&deg;F";
    // ... (etc - code omitted for example)
-   // if input and output unit are the same, return entered value (rounded to two decimals) with appropriate unit
+   // if input and output unit are the same, return entered value (rounded to two decimals) 
+   // displays output with appropriate unit
    } else if (inputUnitSelected == outputUnitSelected) {
       convertedOutputTemp = x;
       if (outputUnitSelected == "Fahrenheit") {
