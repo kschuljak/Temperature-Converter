@@ -1,6 +1,6 @@
 # Temperature Converter
  
- on codepen at https://codepen.io/kaschul/pen/rNYmEBO
+ on codepen at https://codepen.io/kschuljak/pen/rNYmEBO
 
 - converts between Celsius, Fahrenheit, and Kelvin
 - displays converted temperature rounded to two decimal places and with appropriate unit
